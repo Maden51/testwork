@@ -23,3 +23,11 @@
     font-weight: bold;
 }
 
+.video-block__video {
+    position: relative;
+}
+
+.video_video-elements {
+    position: absolute;
+    left: 100px;
+}
