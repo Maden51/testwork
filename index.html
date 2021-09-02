@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="styles/menu-v2.css">
     <link rel="stylesheet" href="styles/footer-v2.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="styles/video-block.css"
+    <link rel="stylesheet" href="styles/video-block.css">
+    <link rel="stylesheet" href="styles/suggest.css">
 </head>
 <body class="new-boss no-touchevents">
 <div class="beboss-head">
@@ -441,24 +442,98 @@
             <div class="container">
                 <div class="video-block">
                     <div class="video-block__header">
-                        <div class="video-block__header-image">
-                            <img src="img/медаль.svg" alt="иконка видео" width="60" height="60">
+                        <div class="video-block__logo">
+                            <img src="/img/медаль.svg" class="video-block__logo-img">
                         </div>
-                        <div class="video-block__header-content">
-                            <div class="video-block__header-title">Конкурс БИБОСС</div>
-                            <div class="video-block__header-text">«Лучшее видео о франшизе»</div>
+                        <div class="video-block__header-title">Конкурс БИБОСС
+                            <div class="video-block__header-subtitle">«Лучшее видео о франшизе»</div>
                         </div>
                     </div>
-                    <h1 class="video-block__content-title">Видео о франшизе «Персональное решение»</h1>
-                    <div class="video-block__video-content">
-                        <video src="#" poster="/img/Rectangle 6.png" class="video-block__video" width="832" height="468">
-                            <div class="video_video-elements">
-                                <img src="/img/Polygon 8.svg" class="video-block__video-play">
-                                <span>Смотреть видео</span>
+                    <div class="video-block__main">
+                        <div class="video-block__title">Видео о франшизе «Персональное решение»</div>
+                        <div class="video-block__main-content">
+                            <div class="video-block__video-container">
+                                <div class="video-container__panel">
+                                    <a href="#">
+                                        <div class="video-container__button-play">
+                                            <img src="/img/Polygon 8.svg" class="video-container__button-img">
+                                        </div>
+                                    </a>
+                                        <div class="video-container__text">Смотреть видео</div>
+                                </div>
+                                <video src="#" class="video-block__main-video" poster="/img/Rectangle 6.png"></video>
                             </div>
-                        </video>
+                            
                         
+                        <div class="video-block__vote">
+                            <div class="vote-title title">Голосование</div>
+                            <div class="vote-text"><p>Для того, чтобы проголосовать за видео, нужно сделать репост в любой из соцсетей:</p></div>
+                            <a href="#" class="vote__link">
+                                <div class="vote-button button_FB">
+                                    <img src="/img/60-fb-round.svg" class="vote-button__logo">
+                                    <span>Голосовать FB</span>
+                                </div>
+                            </a>
+                            <a href="#" class="vote__link">
+                                <div class="vote-button button_VK">
+                                    <img src="/img/60-vk-round.svg" class="vote-button__logo">
+                                    <span>Голосовать VK</span>
+                                </div>
+                            </a>
+                            <a href="#" class="vote__link">    
+                                <div class="vote-button button_OK">
+                                    <img src="/img/60-ok-round.svg" class="vote-button__logo">
+                                    <span>Голосовать OK</span>
+                                </div>
+                            </a>
+                            <div class="vote-count">657 голосов</div>
+                        </div>
+                        </div>
                     </div>
+                </div>
+                <div class="suggest">
+                    <div class="suggest-wrap">
+                        <div class="suggest-content">
+                        <div class="suggest__header">
+                            <div class="suggest__logo">
+                                <img src="/img/suggest-logo.svg" alt="Лого компании" class="suggest__logo-img">
+                            </div>
+                        </div>    
+                        <div class="suggest__main">
+                            <div class="suggest__title title">Персональное решение</div>
+                            <div class="suggest__subtitle">Инвестиции 378 000 — 675 000 ₽</div>
+                            <a href="#" class="suggest__link">
+                                <div class="suggest__link-text">Страница франшизы</div>
+                                <div class="suggest__link-icon">
+                                    <img src="/img/right.svg" alt="стрелочка вправо" class="suggest__link-icon">
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="suggest__footer">
+                            <div class="footer__header">
+                                <div class="footer__header-avatar">
+                                    <img src="/img/avatar.svg" alt="Аватар" class="header-avatar header-avatar_active">
+                                    <img src="/img/photo.svg" alt="Фото пользователя" class="header-avatar">
+                                    <img src="/img/online.svg" alt="значок онлайна" class="header-avatar header-avatar_online">
+                                </div>
+                                <div class="footer__header-content">
+                                    <div class="footer__header-vip">
+                                        <img src="/img/vip.svg" alt="vip" class="header-vip__icon">
+                                    </div>
+                                <div class="footer__header-text">
+                                Дмитрий Варфоломеев <br>
+                                Представитель   
+                                </div>
+                                </div>
+                            </div>
+                            <div class="footer__button">
+                                <button type="submit" class="footer__button-submit button-submit">Запросить финплан</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 </div>
             </div>
         </div>
