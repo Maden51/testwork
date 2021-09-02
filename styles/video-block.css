@@ -104,6 +104,7 @@
     border-radius: 50px;
     margin-top: 8px;
     color: #FFFFFF;
+    box-shadow: 0 4px 4px #00000031;
 }
 
 .vote-button span {

@@ -1,0 +1,83 @@
+.beboss-main {
+    position: relative;
+    padding: 0 30px;
+    top: -45px;
+    max-width: 832px;
+}
+
+.beboss-main__title {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.beboss-main__header-title::after {
+    content: '';
+    width: 100%;
+    background: gray;
+    height: 1px;
+    margin: 24px 0;
+    display: block;
+    opacity: 0.2;
+}
+
+.beboss-main__header-link {
+    margin: 26px 0;
+}
+
+.beboss-main__link {
+    display: flex;
+}
+
+.beboss-main__link:hover {
+    text-decoration: none;
+}
+
+.beboss-main__link-text {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.beboss-main__link-icon:hover {
+    background: #B7B7B7;
+}
+
+.beboss-main__table {
+    background: rgba(30, 160, 30, 0.1);
+    padding: 24px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.table-content__row-name {
+    width: 25%;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.52);
+    vertical-align: baseline;
+}
+
+.table-content__cell-name {
+    width: 75%;
+}
+
+.table-content__row-name, .table-content__cell-name {
+    padding-top: 24px;
+}
+
+.beboss-main__table-footer {
+    text-align: center;
+}
+
+.table-footer__link {
+    justify-content: center;
+}
+
+.table-footer__icon {
+
+}
+
+.table-footer__icon-logo {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px
+}

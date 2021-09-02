@@ -49,6 +49,10 @@
     margin-right: 5px;
 }
 
+.suggest__link-icon:hover {
+    background: #B7B7B7;
+}
+
 .suggest_footer{
     max-width: 232px;
 }
@@ -66,5 +70,27 @@
 }
 
 .footer__header-text {
-    
+    margin-left: 10px;
+}
+
+.header-vip__icon {
+    display: none;
+}
+
+.footer__button {
+    max-width: 232px;
+    margin-top: 10px;
+}
+
+.footer__button-submit {
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 6px ;
+    background-color: #0D870D;
+    box-shadow: 0 4px 4px #00000036;
+    color: white;
+    cursor: pointer;
 }
