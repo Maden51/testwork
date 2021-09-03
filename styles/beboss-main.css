@@ -11,7 +11,7 @@
     font-weight: bold;
 }
 
-.beboss-main__header-title::after {
+.beboss-main__header-title::after, .beboss-main__description-title::after {
     content: '';
     width: 100%;
     background: gray;
@@ -71,13 +71,140 @@
 
 .table-footer__link {
     justify-content: center;
+    align-items: center;
+}
+
+.beboss-main__table-footer::before {
+    content: '';
+    width: 100%;
+    background: gray;
+    height: 1px;
+    margin: 24px 0;
+    display: block;
+    opacity: 0.2;
+}
+
+.table-footer__icon-logo:hover {
+    background: #B7B7B7;
 }
 
 .table-footer__icon {
-
+    display: relative;
+    z-index: 5;
 }
 
 .table-footer__icon-logo {
+    z-index: 5;
+}
+
+.table-footer__icon::before {
+    content: "";
+    width: 50px;
+    z-index: 0;
+    height: 50px;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 25px
+    border-radius: 25px;
+    position: absolute;
+    top: 663px;
+    left: 270px
+}
+
+.table-footer__text {
+    position: relative;
+    left: 20px;
+}
+
+.beboss-main__description-title {
+    margin-top: 25px;
+}
+
+.beboss-main__description-link {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.beboss-main__card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.beboss-main__card {
+    width: calc(95.5%/4);
+    min-height: 196px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card1 {
+    background-image: url('/img/card1.png');
+}
+
+.card2 {
+    background-image: url('/img/card2.png');
+}
+
+.card3 {
+    background-image: url('/img/card3.png');
+}
+
+.card4 {
+    background-image: url('/img/card4.png');
+}
+
+.beboss-main__card:nth-child(n+2) {
+    margin-left: 1.5%;
+}
+
+.beboss-main__form {
+    max-width: 832px;
+    margin-top: 25px;
+    padding: 24px;
+    background: #ECEEF2;
+    border-radius: 16px;
+    display: flex;
+}
+
+.beboss-main__form-main {
+    max-width: 376px;
+    margin-right: 32px;
+}
+
+.beboss-main__form-header{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.form__item {
+    margin: 0;
+}
+
+.form__input {
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-title{
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+.input-field {
+    width: 100%;
+}
+
+textarea.form__input {
+    min-height: 86px;
+    padding: 5px;
+}
+
+.form-input__textarea{
+    min-height: 86px;
+}
+.input-form__button-submit {
+
+    
 }
