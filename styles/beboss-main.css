@@ -1,3 +1,7 @@
+.container {
+    padding: 0;
+}
+
 .beboss-main {
     display: flex;
     position: relative;
@@ -150,7 +154,6 @@
 }
 
 .beboss-main__form {
-    max-width: 832px;
     margin-top: 25px;
     padding: 24px;
     background: #ECEEF2;
@@ -266,7 +269,6 @@
 
 .form-footer__content {
     display: flex;
-    height: 40px;
 }
 
 .footer-content__text {
@@ -338,15 +340,15 @@
 
 .beboss-main__footer-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .beboss-main__footer-item {
-    width: 30%
+    max-width: 352px;
 }
 
 .beboss-main__footer-item:nth-child(-n+2) {
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 .footer-item__video {
@@ -373,6 +375,7 @@
 .footer-item__video-frame {
     position: relative;
     z-index: -1;
+    max-width: 352px;
 }
 
 .footer-item__video::after {
@@ -410,4 +413,86 @@
     background-color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+@media (max-width: 920px) { 
+    .beboss-main {
+        position: static;
+        margin-top: 24px;
+        padding: 0 15px;
+    }
+
+    .beboss-main__aside {
+        display: none;
+    }
+
+    .beboss-main__main {
+        width: 100%;
+    }
+
+    .beboss-main__title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .table-content__row {
+        display: grid;
+    }
+
+    .table-content__row-name, .table-content__cell-name {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .beboss-main__card {
+        min-height: 167px;
+        margin-bottom: 5px;
+        width: calc(95.5%/2);
+    }
+
+    .beboss-main__card:nth-child(n+2) {
+        margin-left: 0;
+    }
+
+    .beboss-main__card:nth-child(odd) {
+        margin-right: 1.5%;
+    }
+
+    .beboss-main__form {
+        flex-direction: column;
+    }
+
+    .beboss-main__form-main {
+       width: 100%;
+    }
+
+    .beboss-main__form-content::after {
+        content: "";
+        width: 100%;
+        background: gray;
+        height: 1px;
+        margin: 24px 0;
+        display: block;
+        opacity: 0.2;
+    }
+
+    .checkbox-captcha {
+        padding: 20px 14px
+    }
+
+    .checkbox-text {
+        width: 60%;
+    }
+
+    .form-aside__list-title {
+        text-align: center;
+    }
+
+    .beboss-main__footer-title {
+        font-size: 24px;
+    }
+
+    .beboss-main__footer-button {
+        width: 100%;
+    }
 }

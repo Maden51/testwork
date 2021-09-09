@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     max-width: 1120px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.836);
     border-radius: 16px;
     position: relative;
     top: -80px;
@@ -93,4 +93,62 @@
     box-shadow: 0 4px 4px #00000036;
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .suggest {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 925px) {
+    .suggest {
+        position: static;
+        margin-top: 25px;
+        box-shadow: 0 10px 40px #00000015;
+    }
+}
+
+@media (max-width: 775px) {
+    .suggest-wrap {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px;
+    }
+
+    .suggest-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .suggest-content::after {
+        content: "";
+        width: 100%;
+        background: gray;
+        height: 1px;
+        margin: 24px 0;
+        display: block;
+        opacity: 0.2;
+    }
+
+    .suggest__link {
+        justify-content: center;
+    }
+
+    .suggest__main {
+        margin-left: 0;
+    }
+
+    .suggest__footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .footer__button {
+        width: 100%;
+    }
 }
