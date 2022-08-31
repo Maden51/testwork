@@ -1,19 +1,20 @@
-import { useState } from 'react';
+interface categoryProps {
+  category: number;
+  onClickCategory: Function;
+}
 
-export default function Categories() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
+export default function Categories({ category, onClickCategory }: categoryProps) {
   const categories = ['Все', 'Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые', 'Новые'];
 
   return (
     <div className="categories">
       <ul>
-        {categories.map((category, index) => (
+        {categories.map((categoryName, index) => (
           <li
+            className={category === index ? 'active' : ''}
             key={index}
-            className={activeIndex === index ? 'active' : ''}
-            onClick={() => setActiveIndex(index)}>
-            {category}
+            onClick={() => onClickCategory(index)}>
+            {categoryName}
           </li>
         ))}
       </ul>
